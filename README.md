@@ -1,7 +1,7 @@
 # fullstack-web-dev-tutorial
 フルスタックWeb開発を学ぶためのチュートリアル
 
-## 章一覧（予定）
+## 目次（予定）
 
 1. 01-html-css
    - HTML & CSS 基礎（レシピサイトなど）
