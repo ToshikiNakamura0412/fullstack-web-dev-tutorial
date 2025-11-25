@@ -1,0 +1,139 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #f5f5f5;
+}
+
+/*
+ヘッダー
+*/
+.site-header {
+  background-color: #262e3d;
+  color: white;
+  padding: 0.05rem 1rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.site-header__inner {
+  max-width: 960px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.site-nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.site-nav a {
+  color: #cbd2d9;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: white;
+}
+
+/*
+ヒーローセクション
+*/
+.hero {
+  padding: 20px;
+  background-color: rgb(227, 245, 251);
+}
+
+.hero__content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*
+レシピ一覧セクション
+*/
+.recipes {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* レシピカード */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 0px;
+}
+
+.recipe-card {
+  background-color: white;
+  margin: 20px;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.recipe-card__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe-card__meta {
+  color: gray;
+  font-size: 14px;
+}
+
+.recipe-card__description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.recipe-card__tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.recipe-card__tags li {
+  background-color: #dcf0fe;
+  color: rgb(13, 49, 111);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/*
+フッター
+*/
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/*
+レスポンス
+*/
+
+@media (max-width: 480px) {
+  .site-nav {
+    font-size: 15px;
+  }
+}

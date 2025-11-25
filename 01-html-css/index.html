@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Recipes - かんたんレシピ集</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <h1 class="site-title">Simple Recipes</h1>
+      <nav class="site-nav">
+        <a href="#about">このサイトについて</a>
+        <a href="#recipes">レシピ一覧</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="hero__content">
+        <h2 class="section-title">毎日の料理を、少しだけ楽に。</h2>
+        <p>
+          Simple Recipes は、忙しい人のための「かんたん・少ない材料・短時間」で作れるレシピ集です。<br />
+          HTML と CSS の練習用に作られたデモサイトです。
+        </p>
+      </div>
+    </section>
+
+    <section id="recipes" class="recipes">
+      <h2 class="section-title">レシピ一覧</h2>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3 class="recipe-card__title">5分で作れるトマトスープ</h3>
+          <p class="recipe-card__meta">調理時間：5分 / 難易度：★☆☆</p>
+          <p class="recipe-card__description">トマトジュースとコンソメを使った、レンジだけで作れる簡単スープ。</p>
+          <ul class="recipe-card__tags">
+            <li>スープ</li>
+            <li>時短</li>
+            <li>一人暮らし</li>
+          </ul>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-card__title">フライパンで作る塩バターチキン</h3>
+          <p class="recipe-card__meta">調理時間: 15分 / 難易度: ★★☆</p>
+          <p class="recipe-card__description">
+            鶏もも肉とバター、塩、にんにくで作るシンプルなメインおかず。
+          </p>
+          <ul class="recipe-card__tags">
+            <li>メイン</li>
+            <li>フライパン</li>
+            <li>ご飯がすすむ</li>
+          </ul>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-card__title">レンジだけ！和風ツナパスタ</h3>
+          <p class="recipe-card__meta">調理時間: 10分 / 難易度: ★☆☆</p>
+          <p class="recipe-card__description">
+            耐熱ボウルひとつで作れる、ツナとめんつゆを使った和風パスタ。
+          </p>
+          <ul class="recipe-card__tags">
+            <li>パスタ</li>
+            <li>レンジ</li>
+            <li>洗い物少なめ</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    このサイトは HTML &amp; CSS 学習用のサンプルです。
+  </footer>
+</body>
+
+</html>
