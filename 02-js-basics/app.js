@@ -8,7 +8,8 @@ function addTodo() {
   }
 
   const newTodoItem = document.createElement('li');
-  newTodoItem.textContent = todoInput.value;
+  // newTodoItem.textContent = todoInput.value;
+  newTodoItem.innerHTML = `<input type="checkbox"> ${todoInput.value} <button class="delete-button">削除</button>`;
   todoList.appendChild(newTodoItem);
 
   todoInput.value = '';
