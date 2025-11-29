@@ -1,5 +1,5 @@
 body {
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -7,24 +7,82 @@ body {
   background-color: rgb(240, 237, 234);
 }
 
+body,
+button,
+input,
+span {
+  font-size: 20px;
+}
+
+/*
+input form
+*/
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
 #new-todo-input {
-  width: 70%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
+  width: 82%;
+  padding: 10px 20px;
+  margin: 0px;
+  border-radius: 15px;
+  border: none;
 }
 
 #add-todo-button {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
+  background-color: rgb(223, 220, 215);
+  padding: 10px 15px;
+  margin: 0px;
+  margin-left: 12px;
+  border-radius: 15px;
   cursor: pointer;
+  border: none;
 }
 
+/*
+todo list
+*/
 #todo-list {
   list-style-type: none;
   text-align: left;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 0px;
+  margin-top: 40px;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  list-style-type: none;
+  text-align: left;
+  padding: 12px 8px;
+  margin: 10px 0px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+#todo-list input {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#todo-list li span {
+  width: 68%;
+}
+
+#todo-list li button {
+  background-color: rgb(223, 220, 215);
+  padding: 5px 18px;
+  margin-left: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
 }
