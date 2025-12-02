@@ -8,9 +8,10 @@ class TodoApp {
     this.todoInput = document.getElementById('new-todo-input');
     this.addButton = document.getElementById('add-todo-button');
     this.todoList = document.getElementById('todo-list');
+    this.errorMessage = document.getElementById('error-message');
 
     // 必要な要素が存在するか確認
-    if (!this.todoInput || !this.addButton || !this.todoList) {
+    if (!this.todoInput || !this.addButton || !this.todoList || !this.errorMessage) {
       throw new Error('必要な要素が見つかりません。HTMLを確認してください。');
     }
 
@@ -52,8 +53,11 @@ class TodoApp {
   addTodo() {
     // 変数名もローワーキャメルケース
     const value = this.todoInput.value.trim(); // 先頭と末尾の空白を削除
+    this.errorMessage.textContent = ''; // エラーメッセージをクリア
+    this.errorMessage.classList.remove('error--visible');
     if (value === '') {
-      alert('ToDoの内容を入力してください！！');
+      this.errorMessage.textContent = 'ToDoの内容を入力してください！！';
+      this.errorMessage.classList.add('error--visible');
       return;
     }
 
