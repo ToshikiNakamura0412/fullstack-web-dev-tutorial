@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>My ToDo</h1>
+  </header>
+
+  <main>
+    <div class="input-form">
+      <input type="text" id="new-todo-input" placeholder="Add a new task" />
+      <button id="add-todo-button">Add</button>
+    </div>
+    <!--
+      UI 内にエラーメッセージを表示するための要素
+      - role="status" と aria-live="polite" を追加して、スクリーンリーダーが動的に更新される内容を認識できるようにしています
+    -->
+    <div id="error-message" class="error" role="status" aria-live="polite"></div>
+    <ul id="todo-list"></ul>
+  </main>
+
+</body>
+
+</html>
